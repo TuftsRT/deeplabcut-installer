@@ -1,3 +1,10 @@
+@ECHO OFF
+ECHO Configuring DeepLabCut... Do not close command prompt.
+
+REM install pip dependencies
+REM TODO
+
+REM convert start menu entries to camelcase
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Deeplabcut\" (
     REN "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Deeplabcut" "DeepLabCut"
 )

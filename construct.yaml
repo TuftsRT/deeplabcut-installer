@@ -8,6 +8,7 @@ channels:
 
 conda_default_channels:
   - conda-forge
+  - tufts
 
 specs:
   - conda
@@ -22,9 +23,6 @@ specs:
   - notebook<7.0.0
   - pip
   - python=3.9
-  - pip:
-    - tensorflow=2.10.0
-    - deeplabcut[gui,tf,modelzoo]=2.3.7
 
 installer_type: exe
 license_file: LICENSE

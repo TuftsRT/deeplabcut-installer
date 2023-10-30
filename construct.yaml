@@ -1,0 +1,40 @@
+name: DeepLabCut
+version: 2.3.7
+company: "Tufts University"
+
+channels:
+  - conda-forge
+  - tufts
+
+conda_default_channels:
+  - conda-forge
+
+specs:
+  - conda
+  - cudatoolkit=11.2
+  - cudnn=8.1.0
+  - deeplabcut-shortcut 1.0
+  - ffmpeg
+  - ipython
+  - jupyter
+  - miniforge_console_shortcut 2.0
+  - nb_conda
+  - notebook<7.0.0
+  - pip
+  - python=3.9
+  - pip:
+    - tensorflow=2.10.0
+    - deeplabcut[gui,tf,modelzoo]=2.3.7
+
+installer_type: exe
+license_file: LICENSE
+post_install: postinstall.bat
+icon_image: deeplabcut.ico
+default_image_color: green
+
+initialize_by_default: False
+register_python_default: False
+check_path_length: True
+check_path_spaces: True
+write_condarc: True
+keep_pkgs: False

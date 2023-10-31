@@ -11,18 +11,30 @@ conda_default_channels:
   - tufts
 
 specs:
+  - absl-py>=1.0.0
+  - astunparse>=1.6.0
+  - cachetools<6.0,>=2.0.0
   - conda
   - cudatoolkit=11.2
-  - cudnn=8.1.0
+  - cudnn=8.1.0.*
   - deeplabcut-shortcut=1.0
   - dlclibrary
   - ffmpeg
   - filterpy>=1.4.4
+  - gast<=0.4.0,>=0.2.1
+  - google-auth-oauthlib<0.5,>=0.4.1
+  - google-auth<3,>=1.6.3
+  - google-pasta>=0.1.1
+  - grpcio<2.0,>=1.24.3
+  - h5py>=2.9.0
   - huggingface_hub
   - imageio-ffmpeg
   - imgaug>=0.4.0
   - ipython
   - jupyter
+  - keras-preprocessing>=1.1.1
+  - keras<2.11,>=2.10.0
+  - markdown>=2.6.8
   - matplotlib-base>=3.3
   - miniforge_console_shortcut=2.0
   - napari-deeplabcut>=0.2
@@ -31,14 +43,20 @@ specs:
   - notebook<7.0.0
   - numba>=0.54
   - numpy>=1.18.5
+  - oauthlib>=3.0.0
+  - opt-einsum>=2.3.2
   - pandas>=1.0.1,!=1.5.0
   - pillow>=7.1
   - pip
+  - pyasn1-modules>=0.2.1
+  - pyasn1<0.6.0,>=0.4.6
   - pytables>=3.7.0
   - python=3.9
   - pytorch<=1.12
   - pyyaml
   - qdarkstyle=3.1
+  - requests-oauthlib>=0.7.0
+  - rsa<5,>=3.1.4
   - ruamel.yaml>=0.15.0
   - scikit-image>=0.17
   - scikit-learn>=1.0
@@ -46,6 +64,10 @@ specs:
   - statsmodels>=0.11
   - tensorpack>=0.11
   - tqdm
+  - werkzeug>=1.0.1
+  - tensorboard<2.11,>=2.10
+  - tensorboard-data-server<0.7.0,>=0.6.0
+  - tensorboard-plugin-wit>=1.6.0
 
 installer_type: exe
 license_file: LICENSE

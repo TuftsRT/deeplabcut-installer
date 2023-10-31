@@ -4,10 +4,12 @@ company: "Tufts University"
 
 channels:
   - conda-forge
+  - pytorch
   - tufts
 
 conda_default_channels:
   - conda-forge
+  - pytorch
   - tufts
 
 specs:
